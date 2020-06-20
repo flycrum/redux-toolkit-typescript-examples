@@ -1,15 +1,22 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+###### Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and WebStorm
+# Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+.idea/**
+!.idea/runConfigurations/
+!.idea/runConfigurations/**
+http-client.private.env.json
+
+# Logs
+logs
+*.log
 
 # testing
 /coverage
 
-# production
-/build
+# Dependency directory
+/node_modules
+/.pnp
+.pnp.js
 
 # misc
 .DS_Store
@@ -21,3 +28,4 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
