@@ -16,7 +16,9 @@ export default function Ex001_SimpleSlice_ReadOnlyCount() {
 
 Ex001_SimpleSlice_ReadOnlyCount.store = store;
 Ex001_SimpleSlice_ReadOnlyCount.description = `
-A read-only counter example (starting at '${store.getState().example.count}') that leverages a simplified portion of the Redux Toolkit api:
+A super simple, *read-only* counter example.
+Statical counter value of '${store.getState().example.count}'.
+Uses a minimal subset of the Redux Toolkit api:
   - createSlice
   - configureStore
 

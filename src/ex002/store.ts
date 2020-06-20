@@ -17,9 +17,6 @@ export const {
 	increment,
 } = slice.actions;
 
-/**
- * Foregoing rootReducer and instead passing the slice reducers directly to configureStore().
- */
 export const store = configureStore({
 	reducer: {
 		example: slice.reducer,
