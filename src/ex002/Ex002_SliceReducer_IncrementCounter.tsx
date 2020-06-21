@@ -1,9 +1,9 @@
 import React from 'react';
-import { store, increment, useExampleSelector, ExampleStateType } from './store';
+import { store, increment, useExampleSelector } from './store';
 import Ex001_SimpleSlice_ReadOnlyCount from '../ex001/Ex001_SimpleSlice_ReadOnlyCount';
 
 export default function Ex002_SliceReducer_IncrementCounter() {
-	const { count } = useExampleSelector((state: ExampleStateType) => state.example);
+	const { count } = useExampleSelector((state) => state.example);
 
 	return (
 		<div>

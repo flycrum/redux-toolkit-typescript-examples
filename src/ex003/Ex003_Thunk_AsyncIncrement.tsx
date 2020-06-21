@@ -1,9 +1,9 @@
 import React from 'react';
-import { store, useExampleSelector, ExampleStateType, incrementAfterAsyncEffectThunk } from './store';
+import { store, useExampleSelector, incrementAfterAsyncEffectThunk } from './store';
 import Spinner from '../shared/components/Spinner';
 
 export default function Ex003_Thunk_AsyncIncrement() {
-	const { count, isLoading } = useExampleSelector((state: ExampleStateType) => state.example);
+	const { count, isLoading } = useExampleSelector((state) => state.example);
 
 	return (
 		<div>
