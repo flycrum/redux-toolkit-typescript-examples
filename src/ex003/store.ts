@@ -31,7 +31,7 @@ export const store = configureStore({
 
 // Define a thunk that dispatches those action creators
 export const incrementAfterAsyncEffectThunk = createAsyncThunk(
-	`${slice.name}/fetchUserById`,
+	`${slice.name}/incrementAfterAsyncEffectThunk`,
 	// Declare the type your function argument here:
 	async (num: number) => {
 		store.dispatch(setLoading(true));
