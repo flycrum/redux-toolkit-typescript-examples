@@ -47,8 +47,8 @@ const createSlicePlus = <State, CaseReducers extends SliceCaseReducers<State>, N
 	for (const key in state.thunks) {
 		if (state.thunks.hasOwnProperty(key)) {
 			// wrap action within store dispatch
-			dispatchThunks[key] = async (...args: any[]) => {
-				return await store.dispatch((state.thunks[key] as Function)(...args));
+			dispatchThunks[key] = (...args: any[]) => {
+				return store.dispatch((state.thunks[key] as Function)(...args));
 			}
 		}
 	}

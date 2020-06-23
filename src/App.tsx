@@ -4,8 +4,9 @@ import { Provider } from 'react-redux';
 import Ex001_SimpleSlice_ReadOnlyCount from './ex001/Ex001_SimpleSlice_ReadOnlyCount';
 import Ex002_SliceReducer_IncrementCounter from './ex002/Ex002_SliceReducer_IncrementCounter';
 import Ex003_Thunk_AsyncIncrement from './ex003/Ex003_Thunk_AsyncIncrement';
-import Ex500 from './ex500/Ex500';
 import Ex003_2_ThunkExtraReducers_AsyncIncrement from './ex003_2/Ex003_2_ThunkExtraReducers_AsyncIncrement';
+import Ex500 from './ex500/Ex500';
+import Ex501 from './ex501/Ex501';
 
 function App() {
 	const examples = [
@@ -14,6 +15,7 @@ function App() {
 		Ex003_Thunk_AsyncIncrement,
 		Ex003_2_ThunkExtraReducers_AsyncIncrement,
 		Ex500,
+		Ex501,
 	];
 	const [ currentExampleIndex, set_currentExampleIndex ] = useState(0);
 	const getPrevIndex = () => (currentExampleIndex + examples.length - 1) % examples.length;
